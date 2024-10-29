@@ -9,7 +9,7 @@ import (
 
 	//"github.com/go-chi/chi/v5"
 	//"github.com/go-chi/chi/v5/middleware"
-	"github.com/thedevsaddam/renderer"
+    "github.com/thedevsaddam/renderer"
 	//"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/bson/primitive"
 	"go.mongodb.org/mongo-driver/mongo"
@@ -40,13 +40,13 @@ type (
 	}
 )
 func main(){
-	
+
 }
 
 func init() {
 	fmt.Println("init function running")
 
-	rnd = renderer.New()
+	//rnd = renderer.New()
 	var err error
 	
 	ctx, cancel := context.WithTimeout(context.Background(), 10*time.Second)
